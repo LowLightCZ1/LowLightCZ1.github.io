@@ -20,13 +20,34 @@ h1{
     font-size: 50px;
 }
 
-#moonContainer{
+#svgContainer{
     position: relative;
 }
 .Moon{
     position: absolute;
     top: -100px;
     right: 100px;
+}
+
+.Mountain_1{
+    position: absolute;
+    left: 50px;
+    top: 65px;
+}
+.Mountain_2{
+    position: absolute;
+    left: 400px;
+    top: 200px;
+}
+
+#btnStart{
+    position: absolute;
+    top: 120px;
+    left: 520px;
+    border-radius: 2px;
+    background-color: #45454594;
+    color: #990000;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 650px) {
