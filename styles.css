@@ -2,11 +2,14 @@
     font-family: inter;
 }
 
+/*#5c0000, #2f0000, #000 ,#626262*/
+
 body {
-    background-image: linear-gradient(to bottom, #5c0000 15%, #2f0000 30%, #000 40%, #626262 100% );
+    background-image: linear-gradient(to bottom, #5c0000 15%, #2f0000 30%, #000 34%, #626262 100% );
     min-height: 200vh;
-    width: auto;
+    width: 100%;
     overflow: auto;
+    margin: 0;
 }
 
 #mainContainer{
@@ -23,31 +26,52 @@ h1{
 #svgContainer{
     position: relative;
 }
-.Moon{
+#Moon{
     position: absolute;
     top: -100px;
     right: 100px;
 }
 
-.Mountain_1{
+#Mountain_1{
     position: absolute;
     left: 50px;
-    top: 65px;
+    top: 109px;
 }
-.Mountain_2{
+#Mountain_2{
     position: absolute;
     left: 400px;
     top: 200px;
 }
 
-#btnStart{
+#Black{
     position: absolute;
+    background-image: linear-gradient(to bottom, #000 25%, #111 100%);
+    width: 100%;
+    height: 150px;
+    top: 74.5%;
+
+
+}
+
+#btnStart{
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    /*padding: 10px 10px;*/
     top: 120px;
-    left: 520px;
-    border-radius: 2px;
-    background-color: #45454594;
+    right: 10%;
+    text-align: center;
+    border: 4px solid #000;
+    border-radius: 8px;
+    background-color: #00000000;
     color: #990000;
     cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#btnStart:hover{
+    background-color: #000;
 }
 
 @media screen and (max-width: 650px) {
